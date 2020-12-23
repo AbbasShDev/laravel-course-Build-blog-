@@ -13,8 +13,14 @@
                 @endforeach
             </ul>
         @endif
+        @php
+        $today = date('Y-m-d H:i:s');
+        @endphp
+        <p>Today: {{$today}}</p>
+{{--        <p>Today: {{date('Y-m-d H:i:s')}}</p>--}}
         @auth
-        <p>Welcome back, {{ $user->name }}</p>
+        <p>@lang('interface.welcome_to_our_website'), {{ $user->name }}</p>
+{{--        <p>{{trans('interface.welcome_to_our_website')}}, {{ $user->name }}</p>--}}
         @else
         <p>Welcome.</p>
         @endauth
@@ -33,14 +39,27 @@
             <div class="form-group">
                 <input class="form-control" type="text" name="name" placeholder="your name">
             </div>
-            <div class="form-group">
-                <textarea class="form-control"  name="massage" placeholder="Your Massage" id="" cols="30" rows="10"></textarea>
-            </div>
 
             <div class="form-group">
-                <button type="submit" class="btn btn-info btn-block">Send</button>
-            </div>
-        </form>
-    </div>
+                <select name="select-issue" id="select-issue" class="form-control">
+{{--                    @foreach($options as $key => $option)--}}
+{{--                        <option value="{{$key}}">{{$option}}</option>--}}
+{{--                    @endforeach--}}
+                    @forelse($options as $key => $option)
+                            <option value="{{$key}}">{{$option}}</option>
+                    @empty
+                        <option value="null">Nothing to select</option>
+                    @endforelse
+                </select>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control"  name="massage" placeholder="Your Massage" id="" cols="30" rows="10"></textarea>
+                </div>
 
-@endsection
+                <div class="form-group">
+                    <button type="submit" class="btn btn-info btn-block">Send</button>
+                </div>
+            </form>
+        </div>
+
+    @endsection

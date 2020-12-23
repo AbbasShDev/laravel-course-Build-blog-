@@ -8,7 +8,19 @@
     <title>{{config('app.name')}} | {{__('About us')}}</title>
 </head>
 <body>
-    <h1>Hello {{$userName}}, from laravel</h1>
-    <a href="remove-session-name">Remove my name</a>
+
 </body>
 </html>
+
+@extends('layouts.app')
+
+@section('title', __('About us'))
+
+@section('content')
+
+    <div class="container">
+        <h1>{{__('Hello')}} {{ Auth::user()->name}}, {{__('from laravel')}}</h1>
+        <a href="remove-session-name">Remove my name</a>
+    </div>
+
+@endsection

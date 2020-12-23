@@ -18,7 +18,15 @@ class ContactPage extends Controller
         $massage = __('Please fill in the form');
         $info = '<small class="text-muted">we work only Monday</small>';
         $user = \Auth::user();
-        return view('contact-us', compact('massage', 'info', 'user'));
+
+        $options = [
+          '1' => 'Problem',
+          '2' => 'Suggestion',
+          '3' => 'Consultation',
+          '4' => 'Personal issue',
+        ];
+
+        return view('contact-us', compact('massage', 'info', 'user', 'options'));
     }
 
     //store session

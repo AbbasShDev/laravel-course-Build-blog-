@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Route::get('contact-us', "ContactPage@contact");
 Route::post('contact-us', "ContactPage@storeSession");
-Route::get('about', "ContactPage@about");
+Route::get('about-us', "ContactPage@about");
 Route::get('remove-session-name', "ContactPage@removeName");
 
 //Route::get('contact-us', function (){
