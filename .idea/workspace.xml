@@ -20,18 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8b61dae-8315-4d17-9bbe-e5b5a2205ba0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/lang/ar.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/ar/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/ar/interface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/interface.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContactPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactPage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/about-us.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/about-us.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/contact-us.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact-us.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_21_043723_create_articles_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_21_044105_create_new_article_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_21_044630_add_columns_to_articles.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +191,8 @@
       <workItem from="1608511371980" duration="529000" />
       <workItem from="1608522171176" duration="3476000" />
       <workItem from="1608622208581" duration="2839000" />
-      <workItem from="1608697010068" duration="3479000" />
+      <workItem from="1608697010068" duration="3744000" />
+      <workItem from="1608863709366" duration="5161000" />
     </task>
     <servers />
   </component>
@@ -216,6 +209,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="365" y="184" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608699829639">
@@ -226,9 +220,9 @@
       <screen x="0" y="25" width="1280" height="725" />
     </state>
     <state x="180" y="25" width="982" height="725" key="SettingsEditor/0.25.1280.725@0.25.1280.725" timestamp="1608511911296" />
-    <state x="305" y="74" width="670" height="676" key="search.everywhere.popup" timestamp="1608699760509">
+    <state x="305" y="74" width="670" height="676" key="search.everywhere.popup" timestamp="1608701599492">
       <screen x="0" y="25" width="1280" height="725" />
     </state>
-    <state x="305" y="74" width="670" height="676" key="search.everywhere.popup/0.25.1280.725@0.25.1280.725" timestamp="1608699760509" />
+    <state x="305" y="74" width="670" height="676" key="search.everywhere.popup/0.25.1280.725@0.25.1280.725" timestamp="1608701599492" />
   </component>
 </project>
