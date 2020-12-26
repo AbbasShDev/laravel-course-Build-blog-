@@ -14,4 +14,16 @@ class Article extends Model
         'user_id',
         'content'
     ];
+
+    public function user() {
+        return $this->belongsTo(User::class);
+    }
+    public function categories(){
+        return $this->belongsToMany(
+            Article::class,
+            'categories_articles',
+            'article_id',
+            'category_id'
+        );
+    }
 }

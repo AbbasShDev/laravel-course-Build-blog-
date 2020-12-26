@@ -21,9 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b8b61dae-8315-4d17-9bbe-e5b5a2205ba0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_21_043723_create_articles_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_21_044105_create_new_article_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_21_044630_add_columns_to_articles.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +191,8 @@
       <workItem from="1608522171176" duration="3476000" />
       <workItem from="1608622208581" duration="2839000" />
       <workItem from="1608697010068" duration="3744000" />
-      <workItem from="1608863709366" duration="5161000" />
+      <workItem from="1608863709366" duration="5346000" />
+      <workItem from="1608981878557" duration="3496000" />
     </task>
     <servers />
   </component>
@@ -216,10 +216,10 @@
       <screen x="0" y="25" width="1280" height="725" />
     </state>
     <state x="365" y="184" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1280.725@0.25.1280.725" timestamp="1608699829639" />
-    <state x="180" y="25" width="982" height="725" key="SettingsEditor" timestamp="1608511911296">
+    <state x="250" y="25" width="982" height="725" key="SettingsEditor" timestamp="1608982143577">
       <screen x="0" y="25" width="1280" height="725" />
     </state>
-    <state x="180" y="25" width="982" height="725" key="SettingsEditor/0.25.1280.725@0.25.1280.725" timestamp="1608511911296" />
+    <state x="250" y="25" width="982" height="725" key="SettingsEditor/0.25.1280.725@0.25.1280.725" timestamp="1608982143577" />
     <state x="305" y="74" width="670" height="676" key="search.everywhere.popup" timestamp="1608701599492">
       <screen x="0" y="25" width="1280" height="725" />
     </state>
