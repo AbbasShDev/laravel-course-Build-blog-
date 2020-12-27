@@ -20,7 +20,7 @@ class Article extends Model
     }
     public function categories(){
         return $this->belongsToMany(
-            Article::class,
+            Category::class,
             'categories_articles',
             'article_id',
             'category_id'

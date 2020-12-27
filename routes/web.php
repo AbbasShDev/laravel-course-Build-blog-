@@ -49,3 +49,5 @@ Route::get('products/{product}/category/{category?}', function ($product, $categ
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('articles', 'ArticleController');

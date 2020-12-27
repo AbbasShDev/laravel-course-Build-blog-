@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,9 +23,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8b61dae-8315-4d17-9bbe-e5b5a2205ba0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/articles/_form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/articles/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/articles/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +203,8 @@
       <workItem from="1608622208581" duration="2839000" />
       <workItem from="1608697010068" duration="3744000" />
       <workItem from="1608863709366" duration="5346000" />
-      <workItem from="1608981878557" duration="3496000" />
+      <workItem from="1608981878557" duration="3689000" />
+      <workItem from="1609044687369" duration="7324000" />
     </task>
     <servers />
   </component>
@@ -220,9 +232,9 @@
       <screen x="0" y="25" width="1280" height="725" />
     </state>
     <state x="250" y="25" width="982" height="725" key="SettingsEditor/0.25.1280.725@0.25.1280.725" timestamp="1608982143577" />
-    <state x="305" y="74" width="670" height="676" key="search.everywhere.popup" timestamp="1608701599492">
+    <state x="305" y="74" width="670" height="676" key="search.everywhere.popup" timestamp="1609052842328">
       <screen x="0" y="25" width="1280" height="725" />
     </state>
-    <state x="305" y="74" width="670" height="676" key="search.everywhere.popup/0.25.1280.725@0.25.1280.725" timestamp="1608701599492" />
+    <state x="305" y="74" width="670" height="676" key="search.everywhere.popup/0.25.1280.725@0.25.1280.725" timestamp="1609052842328" />
   </component>
 </project>

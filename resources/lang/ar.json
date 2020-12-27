@@ -1,5 +1,14 @@
 {
+    "Blogy": "مدونتي",
     "About us": "عنا",
     "Hello": "اهلا",
-    "from laravel": "من لارافيل"
+    "from laravel": "من لارافيل",
+    "Create article": "إنشاء مقال",
+    "Edit article": "تعديل مقال",
+    "Article title": "عنوان المقال",
+    "Article content": "محتوى المقال",
+    "Save": "حفظ",
+    "Edit": "تعديل",
+    "Update": "تحديث",
+    "Delete": "حذف"
 }
