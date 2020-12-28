@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Article;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -11,6 +12,12 @@ class ContactPage extends Controller
     public function __construct()
     {
 //        $this->middleware(['auth', 'checkDay'])->except('about');
+    }
+
+    public function index(){
+
+        $articles = Article::take(3)->orderBy('id', 'DESC')->get();
+        return view('index', compact('articles'));
     }
 
     //Contact page

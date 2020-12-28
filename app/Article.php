@@ -26,4 +26,8 @@ class Article extends Model
             'category_id'
         );
     }
+
+    public function comments(){
+        return $this->hasMany(Comments::class);
+    }
 }

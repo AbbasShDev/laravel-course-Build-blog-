@@ -9,6 +9,12 @@ use Illuminate\Support\Facades\Auth;
 
 class ArticleController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth')->except('show');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -16,7 +22,9 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        //
+        $articles = Article::orderBy('id', 'DESC')->get();
+
+        return view('articles.index', compact('articles'));
     }
 
     /**
@@ -39,6 +47,12 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'title' => 'max:50|required',
+            'categories' => 'required',
+            'content' => 'min:50|required'
+        ]);
+
         $user = Auth::user();
         $categories = array_values($request->categories);
 
@@ -56,7 +70,9 @@ class ArticleController extends Controller
      */
     public function show(Article $article)
     {
-        //
+        $comments = $article->comments()->orderBy('id', 'DESC')->get();
+
+        return view('articles.show', compact('article', 'comments'));
     }
 
     /**
@@ -67,6 +83,12 @@ class ArticleController extends Controller
      */
     public function edit(Article $article)
     {
+
+        if(Auth::id() != $article->user_id){
+            return abort('401');
+        }
+
+
         $categories = Category::select('title', 'id')->get();
 
         $articleCategories = $article->categories()->pluck('id')->toArray();
@@ -84,6 +106,16 @@ class ArticleController extends Controller
      */
     public function update(Request $request, Article $article)
     {
+        if(Auth::id() != $article->user_id){
+            return abort('401');
+        }
+
+        $request->validate([
+            'title' => 'max:50|required',
+            'categories' => 'required',
+            'content' => 'min:50|required'
+        ]);
+
         $article->update($request->all());
 
         $article->categories()->sync($request->categories);
@@ -99,6 +131,11 @@ class ArticleController extends Controller
      */
     public function destroy(Article $article)
     {
-        //
+        if(Auth::id() != $article->user_id){
+            return abort('401');
+        }
+
+        $article->delete();
+        return redirect()->back();
     }
 }
