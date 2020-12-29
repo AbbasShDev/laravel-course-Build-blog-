@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Article;
+use App\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -17,7 +18,8 @@ class ContactPage extends Controller
     public function index(){
 
         $articles = Article::take(3)->orderBy('id', 'DESC')->get();
-        return view('index', compact('articles'));
+        $categories = Category::take(3)->orderBy('id', 'DESC')->get();
+        return view('index', compact('articles', 'categories'));
     }
 
     //Contact page

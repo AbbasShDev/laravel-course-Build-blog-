@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -25,6 +26,7 @@ class HomeController extends Controller
     public function index()
     {
         $articles = Auth::user()->articles;
-        return view('home', compact('articles'));
+        $categories = Category::all();
+        return view('home', compact('articles', 'categories'));
     }
 }

@@ -12,7 +12,7 @@ class ArticleController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth')->except('show');
+        $this->middleware('auth')->except('show', 'index');
     }
 
     /**
@@ -71,8 +71,9 @@ class ArticleController extends Controller
     public function show(Article $article)
     {
         $comments = $article->comments()->orderBy('id', 'DESC')->get();
+        $categories = $article->categories()->get();
 
-        return view('articles.show', compact('article', 'comments'));
+        return view('articles.show', compact('article', 'comments', 'categories'));
     }
 
     /**
@@ -88,11 +89,9 @@ class ArticleController extends Controller
             return abort('401');
         }
 
-
         $categories = Category::select('title', 'id')->get();
 
         $articleCategories = $article->categories()->pluck('id')->toArray();
-
 
         return view('articles.edit', compact('categories', 'article', 'articleCategories'));
     }

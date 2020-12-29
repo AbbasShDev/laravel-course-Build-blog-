@@ -12,5 +12,8 @@
         @include('articles._card_article')
         <a href="{{ route('articles.index') }}" class="btn btn-link">{{ __('View all articles') }}</a>
     </div>
+    <h1 class="text-info mt-3">{{ __('Latest categories') }}</h1>
+
+    @include('categories._show_categories')
 </div>
 @endsection

@@ -13,9 +13,13 @@
             </div>
 
             <div class="card-footer">
-                <div><b>{{ __('Author') }}: </b>{{ $article->user->name }}</div>
-                <div><b>{{ __('Created at') }}: </b>{{ $article->created_at }}</div>
-                <div><b>{{ __('Updated at') }}: </b>{{ $article->updated_at }}</div>
+                    <div><b>{{ __('Author') }}: </b>{{ $article->user->name }}</div>
+                    <div><b>{{ __('Created at') }}: </b>{{ $article->created_at }}</div>
+                    <div><b>{{ __('Updated at') }}: </b>{{ $article->updated_at }}</div>
+
+                    @foreach($categories as $category)
+                    <a class="text-decoration-none" href="{{ route('categories.show', $category) }}"><span class="badge badge-info">{{ $category->title }}</span></a>
+                    @endforeach
             </div>
         </div>
 

@@ -39,5 +39,14 @@
     "Confirm Password": "تأكيد كلمة المرور",
     "Reset Password": "إستعادة كلمة المرور",
     "Send Password Reset Link": "ارسل رابط إستعادة كلمة المرور",
-    "Welcome to": "مرحبا بك في "
+    "Welcome to": "مرحبا بك في ",
+    "Latest categories": "آخر التصنيفات المضافة",
+    "Categories": "التصنيفات",
+    "New category": "إضافة تصنيف",
+    "My articles": "مقالاتي",
+    "Create category": "إضافة تصنيف",
+    "Category title": "عنوان التصنيف",
+    "Edit category": "تعديل تصنيف",
+    "My profile": "حسابي",
+    "All categories": "كل التصنيفات"
 }
